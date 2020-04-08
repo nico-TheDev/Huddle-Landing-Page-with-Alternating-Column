@@ -4,6 +4,7 @@
     --VeryPaleCyan: hsl(193, 100%, 96%);
     --VeryDarkCyan: hsl(192, 100%, 9%);
     --GrayishBlue: hsl(208, 11%, 55%);
+    --Pink: hsl(322, 100%, 66%);
 }
     
 
@@ -23,10 +24,280 @@ html{
 body{
     font-family: 'Open Sans',sans-serif;
     font-weight: 400;
+    position: relative;
 }
 
 h1,h2,h3{
     font-family: 'Poppins',sans-serif;
     font-weight: 400;
+}
+
+/* GENERAL */
+.section{
+    margin-bottom: 10rem;
+}
+
+/* BUTTONS */
+
+.btn{
+    border: none;
+    background: white;
+    font-size: 1.5rem;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+    padding: 10px 35px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+    transition: all 300ms ease;
+}
+
+.btn:hover{
+    background-color: var(--Pink);
+    color: white;
+}
+
+.pink-btn{
+    background: var(--Pink);
+    color: white;
+}
+
+.pink-btn:hover{
+    background-color: white;
+    color: var(--VeryDarkCyan);
+}
+
+/* HEADER */
+
+.landing-section{
+    height: 100vh;
+    background:var(--VeryPaleCyan);
+    background-image: url(/images/bg-hero-desktop.svg);
+    background-position: center;
+    background-size: contain;
+}
+
+/* NAVIGATION */
+
+nav{
+    width: 90%;
+    height: 10vh;
+    margin: 0 auto;
+    padding:2rem 0 ;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 20rem;
+}
+
+/* MAIN SECTION */
+
+.hero{
+    width: 90%;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.textblock{
+    flex: 1 1 40%;
+    margin-right: 10px;
+}
+
+.title-text{
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: var(--VeryDarkCyan);
+}
+
+.sub-text{
+    width: 90%;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: var(--GrayishBlue);
+    margin-bottom: 20px;
+}
+
+.hero-illustration{
+    flex: 2 1 50%;
+    margin-left: 10px;
+}
+
+/* SHOWCASE SECTION */
+
+.card-container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(40rem,1fr));
+    align-items: center;
+
+    margin: 5vh 0;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    border-radius: 20px 0;
+    padding: 4rem;
+    padding-left: 8rem;
+}
+
+.card .title-text{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.illustration{
+    width: 80%;
+    justify-self: end;
+}
+
+.card2 .illustration{
+    justify-self: start;
+    order: 1;
+}
+
+.card2 .textblock{
+    order: 2;
+}
+
+/* GET STARTED */
+
+
+.get-started-card-container{
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+.get-started-card{
+    width: 70%;
+    height: 20vh;
+    margin: 0 auto;
+    padding: 2rem;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+    border-radius: 20px;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.get-started-card .title-text{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+/* FOOTER */
+
+.footer-section{
+    background-color: var(--VeryDarkCyan);
+    height: 45vh;
+    position: relative;
+   }
+
+.footer-container::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 250px;
+    background-color:var(--VeryDarkCyan);
+    position: absolute;
+    z-index: -1;
+    top: -170px;
+    left: 0;
+}
+
+.footer-container{
+    width: 90%;
+    margin: 0 auto;
+    color: white;
+    font-size: 2rem;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    justify-items: center;
+    align-items: center;
+}
+
+.footer-container ul li{
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+
+.footer-links{
+    color: white;
+    text-decoration: none;
+    transition: color 300ms ease;
+}       
+
+.footer-links:hover{
+    color: var(--Pink);
+}
+
+.social{
+    color:white;
+}
+
+/* ITEM 1 */
+.item1 .text-with-icon{
+    display: flex;
+    align-items: flex-start;
+}
+
+.text-with-icon img{
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+    margin-right: 20px;
+}
+
+
+/* ITEM 4 */
+.item4{
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item4 li:last-child{
+    font-size: 1.4rem;
+}
+
+.item4 .social-links{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.social-links > *{
+    padding: 5px;
+    margin-right: 10px;
+    border:1px solid white;
+    border-radius: 50%;
+}
+
+.fb{
+    padding: 5px 9px;
+}
+
+.twitter{
+    padding: 5px;
+}
+
+.insta{
+    padding: 5px 6px;
+    font-size: 2.2rem;
 }
 
