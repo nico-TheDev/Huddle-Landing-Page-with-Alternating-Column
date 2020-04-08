@@ -25,6 +25,7 @@ body{
     font-family: 'Open Sans',sans-serif;
     font-weight: 400;
     position: relative;
+    max-width: 100vw;
 }
 
 h1,h2,h3{
@@ -86,9 +87,9 @@ h1,h2,h3{
 .landing-section{
     height: 100vh;
     background:var(--VeryPaleCyan);
-    background-image: url(/images/bg-hero-desktop.svg);
+    background-image: url(./images/bg-hero-desktop.svg);
     background-position: center;
-    background-size: contain;
+    background-size: cover;
 }
 
 /* NAVIGATION */
