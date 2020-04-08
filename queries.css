@@ -1,0 +1,127 @@
+@media (max-width:800px){
+    html{
+        font-size: 45%;
+    }
+
+    .logo{
+        width: 100px;
+    }
+
+    .landing-section{
+        background-image: url(/images/bg-hero-mobile.svg);
+        background-position: top;
+        height: -webkit-max-content;
+        height: -moz-max-content;
+        height: max-content;
+        padding-bottom: 30px;
+    }
+
+    .hero{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
+        align-content: center;
+        -webkit-box-pack: center;
+                justify-content: center;
+    }
+
+    .pink-btn{
+        padding: 1.5rem 7rem;
+    }
+
+    .textblock{
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .textblock > *{
+        margin-bottom: 20px;
+    }
+    
+    .hero-illustration{
+        width: 100%;
+    }
+
+    .sub-text{
+        width: 100%;
+    }
+
+    /* SHOWCASE */
+
+    .card{
+        -webkit-box-pack: center;
+                justify-content: center;
+        padding:6rem 4rem 4rem 4rem;
+        text-align: center;
+    }
+
+    .card img{
+        justify-self: center;
+        -webkit-box-ordinal-group: 0;
+                order: -1;
+        margin-bottom: 5rem;
+    }
+
+    .card2 .illustration{
+        justify-self: center;
+    }
+
+    /* GET STARTED */
+
+    .get-started-card-container{
+        width: 100%;
+    }
+
+    .get-started-card{
+        width: 85%;
+        text-align: center;
+        align-content: stretch;
+    }
+
+    .get-started-card .title-text{
+        font-size: 2.8rem;
+    }
+
+/* FOOTER */
+
+.footer-section{
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+}
+
+.footer-container{
+    justify-items: start;
+    font-size: 2.5rem;
+    /* grid-gap: 10px; */
+}
+
+.footer-icon{
+    width: 200px;
+}
+
+.item{
+    margin-bottom: 20px;
+}
+
+.item4{
+    justify-self: center;
+}
+
+
+.social-links{
+    margin-left: 10px;
+    -webkit-box-pack: center;
+            justify-content: center;
+}
+.social-links > *{
+    margin: 10px;
+}
+
+.item4 li:last-child{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+}

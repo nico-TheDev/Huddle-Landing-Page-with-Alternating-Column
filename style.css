@@ -33,6 +33,20 @@ h1,h2,h3{
 }
 
 /* GENERAL */
+
+.sign{
+    background-color: var(--VeryDarkCyan);
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.sign-link{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-style: italic;
+}
 .section{
     margin-bottom: 10rem;
 }
@@ -45,9 +59,10 @@ h1,h2,h3{
     font-size: 1.5rem;
     font-family: 'Poppins',sans-serif;
     font-weight: 600;
-    padding: 10px 35px;
+    padding: 1rem 3.5rem;
     border-radius: 20px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+    -webkit-transition: all 300ms ease;
     transition: all 300ms ease;
 }
 
@@ -84,9 +99,13 @@ nav{
     margin: 0 auto;
     padding:2rem 0 ;
 
+    display: -webkit-box;
+
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+            align-items: center;
 }
 
 .logo{
@@ -99,13 +118,18 @@ nav{
     width: 90%;
     margin: 0 auto;
 
+    display: -webkit-box;
+
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+            align-items: center;
 }
 
 .textblock{
-    flex: 1 1 40%;
+    -webkit-box-flex: 1;
+            flex: 1 1 40%;
     margin-right: 10px;
 }
 
@@ -124,7 +148,8 @@ nav{
 }
 
 .hero-illustration{
-    flex: 2 1 50%;
+    -webkit-box-flex: 2;
+            flex: 2 1 50%;
     margin-left: 10px;
 }
 
@@ -133,20 +158,23 @@ nav{
 .card-container{
     width: 90%;
     margin: 0 auto;
+    display: -webkit-box;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    -webkit-box-pack: center;
+            justify-content: center;
 }
 
 .card{
     width: 90%;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(40rem,1fr));
-    align-items: center;
+    -webkit-box-align: center;
+            align-items: center;
 
     margin: 5vh 0;
     box-shadow: 0 5px 10px rgba(0,0,0,0.3);
-    border-radius: 20px 0;
+    border-radius: 20px;
     padding: 4rem;
     padding-left: 8rem;
 }
@@ -163,11 +191,13 @@ nav{
 
 .card2 .illustration{
     justify-self: start;
-    order: 1;
+    -webkit-box-ordinal-group: 2;
+            order: 1;
 }
 
 .card2 .textblock{
-    order: 2;
+    -webkit-box-ordinal-group: 3;
+            order: 2;
 }
 
 /* GET STARTED */
@@ -188,10 +218,16 @@ nav{
     border-radius: 20px;
     background-color: white;
 
+    display: -webkit-box;
+
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
 }
 
 .get-started-card .title-text{
@@ -228,7 +264,8 @@ nav{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
     justify-items: center;
-    align-items: center;
+    -webkit-box-align: center;
+            align-items: center;
 }
 
 .footer-container ul li{
@@ -239,11 +276,16 @@ nav{
 .footer-links{
     color: white;
     text-decoration: none;
+    -webkit-transition: color 300ms ease;
     transition: color 300ms ease;
 }       
 
 .footer-links:hover{
     color: var(--Pink);
+}
+
+.footer-icon{
+    width: 200px;
 }
 
 .social{
@@ -252,8 +294,10 @@ nav{
 
 /* ITEM 1 */
 .item1 .text-with-icon{
+    display: -webkit-box;
     display: flex;
-    align-items: flex-start;
+    -webkit-box-align: start;
+            align-items: flex-start;
 }
 
 .text-with-icon img{
@@ -267,9 +311,13 @@ nav{
 /* ITEM 4 */
 .item4{
     align-self: stretch;
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
 }
 
 .item4 li:last-child{
@@ -277,8 +325,10 @@ nav{
 }
 
 .item4 .social-links{
+    display: -webkit-box;
     display: flex;
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+            justify-content: flex-start;
 }
 
 .social-links > *{
