@@ -1,152 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
- 
-  <title>Frontend Mentor | Huddle landing page with alternating feature blocks</title>
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+        <link rel="stylesheet" href="./css/styles.css" />
+        <title>
+            Frontend Mentor | Huddle landing page with alternating feature
+            blocks
+        </title>
+    </head>
+    <body class="font-body leading-tight text-gray-900">
+        <header
+            class="min-h-screen relative bg-paleCyan bg-mobile-pattern pt-4 pb-16"
+        >
+            <div class="container">
+                <!-- NAVIGATION -->
+                <nav class="h-tenth flex items-center justify-between mb-16">
+                    <img
+                        src="./images/logo.svg"
+                        alt="huddle logo"
+                        class="w-24"
+                    />
+                    <button class="btn">
+                        Try it Free
+                    </button>
+                </nav>
+                <!-- END OF NAVIGATION -->
+                <!-- HERO -->
+                <div class="text-center mb-16">
+                    <h1 class="text-3xl capitalize font-bold mb-4">
+                        Build the Community Your Fans will Love
+                    </h1>
+                    <p
+                        class="text-gray-700 leading-relaxed mb-8 text-md w-90 mx-auto"
+                    >
+                        Huddle re-imagines the way we build communities.You have
+                        a voice, but so does your audience.Create connections
+                        with your users as you engage in genuine discussion.
+                    </p>
 
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="queries.css">
-  <script src="./images/all.js"></script>
-</head>
-<body>
+                    <a href="#" class="btn-pink inline-block w-auto mx-auto"
+                        >Get started for free</a
+                    >
+                </div>
 
-  <header class="landing-section section">
-    <nav>
-      <img src="./images/logo.svg" class="logo" alt="Huddle Logo">
-      <button class="btn light-btn">Try it free</button>
-    </nav>
+                <img
+                    src="./images/illustration-mockups.svg"
+                    alt="hero mobile"
+                    class="block"
+                />
+            </div>
+        </header>
 
-    <main class="hero">
-      <div class="textblock">
-        <h2 class="title-text">
-          Build The Community Your Fans Will Love
-        </h2>
-        <p class="sub-text">
-          Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
-          Create connections with your users as you engage in genuine discussion. 
-        </p>
-        <button class="btn pink-btn">Get Started For Free</button>
-      </div>
-      <img src="./images/illustration-mockups.svg" alt="Mockup Picture" class="hero-illustration">
-    </main>
-  </header>
+        <!-- END OF HEADER -->
+        <!-- FEATURES SECTION -->
 
-  <!-- CHARACTERISTIC SECTION -->
-  <section class="section showcase">
-    <div class="card-container">
+        <section class="pt-16 pb-24">
+            <div class="container grid gap-4">
+                <figure
+                    class="px-8 py-16 shadow-xl rounded-xl flex flex-col items-center"
+                >
+                    <img
+                        src="./images/illustration-grow-together.svg"
+                        alt="grow together"
+                        class="w-90 block mb-12"
+                    />
+                    <div class="text-center">
+                        <h2 class="text-2xl font-bold font-head mb-4">
+                            Grow Together
+                        </h2>
+                        <p class="text-gray-700">
+                            Generate meaningful discussions with your audience
+                            and build a strong, loyal community. Think of the
+                            insightful conversations you miss out on a feedback
+                            form.
+                        </p>
+                    </div>
+                </figure>
+                <figure
+                    class="px-8 py-16 shadow-xl rounded-xl flex flex-col items-center"
+                >
+                    <img
+                        src="./images/illustration-flowing-conversation.svg"
+                        alt="grow together"
+                        class="w-90 block mb-12"
+                    />
+                    <div class="text-center">
+                        <h2 class="text-2xl font-bold font-head mb-4">
+                            Flowing Conversations
+                        </h2>
+                        <p class="text-gray-700">
+                            Generate meaningful discussions with your audience
+                            and build a strong, loyal community. Think of the
+                            insightful conversations you miss out on a feedback
+                            form.
+                        </p>
+                    </div>
+                </figure>
+                <figure
+                    class="px-8 py-16 shadow-xl rounded-xl flex flex-col items-center"
+                >
+                    <img
+                        src="./images/illustration-your-users.svg"
+                        alt="grow together"
+                        class="w-90 block mb-12"
+                    />
+                    <div class="text-center">
+                        <h2 class="text-2xl font-bold font-head mb-4">
+                            Your Users
+                        </h2>
+                        <p class="text-gray-700">
+                            Generate meaningful discussions with your audience
+                            and build a strong, loyal community. Think of the
+                            insightful conversations you miss out on a feedback
+                            form.
+                        </p>
+                    </div>
+                </figure>
+            </div>
+        </section>
 
-      <div class="card card1">
-        <div class="textblock">
-          <h3 class="card-title title-text">
-            Grow Together
-          </h3>
-          <p class="sub-text">
-            Generate meaningful discussions with your audience and build a strong, loyal community. 
-            Think of the insightful conversations you miss out on with a feedback form. 
-          </p>
-        </div>
-       
-        <img src="./images/illustration-grow-together.svg" alt="Grow Together illustration" class="illustration">
-      </div>
-
-      <div class="card card2">
-        <div class="textblock">
-          <h3 class="card-title title-text">
-            Flowing Conversations
-          </h3>
-          <p class="sub-text ">
-            You wouldn't paginate a conversation in real life, so why do it online? Our threads 
-            have just-in-time loading for a more natural flow.
-          </p>
-        </div>
-       
-        <img src="./images/illustration-flowing-conversation.svg" alt="Flowing Conversations illustration" class="illustration">
-      </div>
-
-      <div class="card card3">
-        <div class="textblock">
-          <h3 class="card-title title-text">
-            Your Users
-          </h3>
-          <p class="sub-text">
-            It takes no time at all to integrate Huddle with your app's authentication solution. 
-            This means, once signed in to your app, your users can start chatting immediately.
-          </p>
-        </div>
-        
-        <img src="./images/illustration-your-users.svg" alt="Your Users illustration" class="illustration">
-      </div>
-
-    </div>
-  </section>
-
-  <section class="get-started section">
-    <div class="get-started-card-container">
-      <div class="get-started-card">
-        <h2 class="title-text">
-          Ready To Build Your Community?
-        </h2>
-        <button class="pink-btn btn">
-          Get Started For Free
-        </button>
-      </div>
-    </div>
-  </section>
-
-
-  <footer class="footer-section">
-    <div class="footer-container">
-      <ul class="item item1">
-        <li class=""><img src="/images/white-logo.PNG" class="footer-icon" alt=""></li>
-        <li class="text-with-icon">
-          <img src="/images/icon-location.svg" alt="">
-          <p class="special">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-            </p>
-        </li>
-        <li class="text-with-icon">
-          <img src="/images/icon-phone.svg" class="footer-icon" alt="">
-          <p>  +1-543-123-4567 </p>
-        </li>
-
-        <li class="text-with-icon">
-          <img src="/images/icon-email.svg" class="footer-icon" alt="">
-          <p> example@huddle.com</p>
-        </li>
-      </ul>
-      <ul class="item item2">
-        <li><a href="" class="footer-links">About Us</a></li>
-        <li><a href="" class="footer-links">What Do We Do</a></li>
-        <li><a href="" class="footer-links">FAQ</a></li>
-      </ul>
-      <ul class="item item3">
-        <li><a href="" class="footer-links">Career</a></li>
-        <li><a href="" class="footer-links">Blog</a></li>
-        <li><a href="" class="footer-links">Contact Us</a></li>
-      </ul>
-      <ul class="item item4">
-        <div class="social-links">
-          <li><a href="" class="footer-links"><i class="fab fa-facebook-f social fb"></i></a></li>
-          <li><a href="" class="footer-links"><i class="fab fa-twitter social twitter"></i></a></li>
-          <li><a href="" class="footer-links"><i class="fab fa-instagram social insta"></i></a></li>
-        </div>
-    
-        <li>  &copy; Copyright 2018 Huddle. All rights reserved. </li>
-      </ul>
-      
-    </div>
-  </footer>
-  
-
-
-  <div class="sign">
-    <p class="attribution">
-      Challenge by <a class="sign-link" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a class="sign-link" href="http://github.com/theAspiringDev1" target="_blank">Norberto Ignacio</a>.
-    </p>
-  </div>
-</body>
+        <!-- END OF FEATURES SECTION -->
+    </body>
 </html>

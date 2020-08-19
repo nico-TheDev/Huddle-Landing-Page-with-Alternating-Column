@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,600&display=swap");
+
+@tailwind base;
+
+@tailwind components;
+
+.container {
+    @apply mx-auto w-90;
+}
+.btn {
+    @apply bg-white shadow-lg px-8 py-2 font-bold rounded-full hover:bg-main hover:text-white transition;
+}
+
+.btn-pink {
+    @apply bg-white shadow-lg px-8 py-2 font-bold rounded-full bg-main text-white hover:text-main hover:bg-white py-3 capitalize hover:shadow-2xl;
+}
+
+@tailwind utilities;
